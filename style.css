@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .header {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 10px #909090;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .header .header-href {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .header .hrf {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: relative;
+}
+.container .header .hrf::before {
+  content: " ";
+  width: 0px;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #D50100;
+  transition: 0.2s;
+}
+.container .header .hrf:hover::before {
+  width: 100%;
+}
+.container .header a {
+  width: 100px;
+  height: 100%;
+  color: #212121;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.container .header a:hover {
+  color: #D50100;
+}
+.container .header .btn button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #D50100;
+  border: none;
+  color: white;
+  font-size: 17px;
+  position: relative;
+}
+.container .header .btn button:before {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  border-radius: 5px;
+  background-color: rgba(220, 77, 77, 0.3);
+  transition: 1s;
+}
+.container .header .btn button:hover:before {
+  width: 100%;
+}
+.container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .text {
+  width: 1500px;
+  height: 89.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .text h1 {
+  color: black;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.container .text h1 .spam {
+  color: #D50100;
+}
+.container .text .fp {
+  padding-bottom: 130px;
+  color: #868686;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container .text .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .text .card .cart {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+}
+.container .text .card .cart .dad {
+  display: flex;
+  justify-content: center;
+}
+.container .text .card .cart .dad .one {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .text .card .cart .dad .two {
+  width: 350px;
+  height: 100%;
+  padding-left: 20px;
+}
+.container .text .card .cart .dad .two h2 {
+  width: 350px;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.container .text .card .cart .dad .two p {
+  width: 350px;
+  color: #868686;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    .header {
+        width: 100%;
+        height: 100px;
+
+        box-shadow: 0px 0px 10px #909090;
+
+        background-color: white;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .header-href {
+            width: 500px;
+            height: 100%;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hrf {
+            width: 100px;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: black;
+
+            position: relative;
+
+            &::before {
+                content: " ";
+
+                width: 0px;
+                height: 5px;
+
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+
+                background-color: #D50100;
+
+                transition: 0.2s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+        }
+
+        a {
+            width: 100px;
+            height: 100%;
+            color: #212121;
+            font-size: 17px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: 0.2s;
+
+            &:hover {
+                color: #D50100;
+            }
+        }
+
+        .btn button {
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #D50100;
+            border: none;
+            color: white;
+            font-size: 17px;
+
+            position: relative;
+
+            &:before {
+                content: " ";
+
+                width: 0%;
+                height: 100%;
+
+                position: absolute;
+
+                left: 0%;
+                bottom: 0%;
+
+                border-radius: 5px;
+
+                background-color: rgba(220, 77, 77, 0.3);
+
+                transition: 1s;
+            }
+
+            &:hover:before {
+                width: 100%;
+            }
+        }
+    }
+
+    .box {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 1500px;
+        height: 89.6vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            color: black;
+            font-weight: 600;
+            padding-bottom: 20px;
+
+            .spam {
+                color: #D50100;
+            }
+        }
+
+        .fp{
+
+            padding-bottom: 130px;
+            color: #868686;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cart {
+                width: 400px;
+                height: 200px;
+
+                padding: 20px;
+                margin: 10px;
+
+                .dad {
+                    display: flex;
+                    justify-content: center;
+
+                    .one {
+                        width: 50px;
+                        height: 50px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .two {
+                        width: 350px;
+                        height: 100%;
+
+                        padding-left: 20px;
+
+                        h2 {
+                            width: 350px;
+
+                            font-size: 22px;
+                            font-weight: 600;
+
+                            padding-bottom: 20px;
+                        }
+
+                        p {
+                            width: 350px;
+
+                            color: #868686;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
